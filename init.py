@@ -26,7 +26,7 @@ def enable_module(module_name):
 #   print(f"Enable module {module_name}.")
     subprocess.run([php_cli, magento_path, "module:enable", module_name])
 #	print("Setup upgrade.")
-	subprocess.run([php_cli, magento_path, "setup:upgrade"])
+    subprocess.run([php_cli, magento_path, "setup:upgrade"])
 
 def clear_data():
     """
